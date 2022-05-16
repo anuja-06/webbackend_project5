@@ -1,0 +1,4 @@
+api3: uvicorn --port $PORT shardapi:app --reload
+api2: uvicorn --port $PORT api2:app --reload
+api4: uvicorn --port $PORT api4:app --reload
+api6: uvicorn --port $PORT integration:app --reload
